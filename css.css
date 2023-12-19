@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+   
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("./janela-de-trailer-com-gotas-de-chuva.jpg");
+    background-size: cover;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 230px;
+    width: 580px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+}
+
+.clock div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: rgba(21, 100, 12, 0.6);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.clock span {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.clock span.time {
+    text-transform: uppercase;
+    text-shadow: -5px 5px 5px black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    body {
+        background: url("https://cdn.pixabay.com/vimeo/231759069/chuva-11722.mp4?width=640&hash=eda7fd710c8fdb4a13b3d88d5dc991f0c22d699b");
+    }
+
+    .clock {
+        height: 180px;
+        width: 420px;
+    }
+
+    .clock div {
+        height: 120px;
+        width: 100px;
+    }
+
+    .clock span {
+        font-size: 50px;
+    }
+
+    .clock span.time {
+        font-size: 13px;
+    }
+}
